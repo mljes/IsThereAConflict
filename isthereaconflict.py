@@ -170,10 +170,10 @@ while day_input != "MONDAY" and day_input != "TUESDAY" and day_input != "WEDNESD
 
 day_letter = day_input[0]
 
-time_string = raw_input("Enter timespan of event in format '0000-0000'")
+time_string = raw_input("Enter timespan of event in format '0000-0000': ")
 
 while re.search("([0-1][0-9]|2[0-3])([0-5][0-9])-([0-1][0-9]|2[0-3])([0-5][0-9])", time_string) == None:
-	time_string = raw_input("Enter timespan of event in format '0000-0000'")
+	time_string = raw_input("Enter timespan of event in format '0000-0000': ")
 
 event_start_time = parse_start_time(time_string)
 event_end_time = parse_end_time(time_string)
